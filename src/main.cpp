@@ -35,19 +35,19 @@ bool armTo(int pos){
   armMotor.spinFor(forward, pos, degrees, false);
   return true;
 }
-//Arm Raise
+//Claw Open
 void controller_L1_Pressed(){
   clawMotor.spin(directionType::fwd, 50, velocityUnits::pct);
 }
-//Arm Lower
+//Claw Close
 void controller_L2_Pressed(){
   clawMotor.spin(directionType::rev, 50, velocityUnits::pct);
 }
-//Claw Open
+//Arm Raise
 void controller_R1_Pressed(){
   armMotor.spin(directionType::fwd, 50, velocityUnits::pct);
 }
-//Claw Close
+//Arm Lower
 void controller_R2_Pressed(){
   armMotor.spin(directionType::rev, 50, velocityUnits::pct);
 }
